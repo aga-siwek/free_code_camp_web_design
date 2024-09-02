@@ -1,0 +1,181 @@
+/*general style*/
+* {
+    box-sizing: border-box
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    font-family: system-ui, Tahoma;
+    margin: 0;
+    background-color: #f2f2f2;
+
+}
+
+/* main font style*/
+h1 {
+    font-size: 3rem;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+
+    text-align: center;
+    margin: 0 20px
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.photo_description {
+    font-size: 0.9rem;
+    color: #ad7c5c
+}
+
+.border {
+    border: 1px;
+    border-style: solid;
+    align-items: center;
+    width: 40%;
+    margin: 30px auto
+
+}
+
+.dark {
+    border-color: #222831;
+}
+
+.light {
+    border-color: #f2f2f2;
+}
+
+/*menu and header*/
+.menu {
+    background: #222831;
+    margin: 0;
+    display: flex
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0 0 20px;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    text-align: center;
+    padding: 6px 6px;
+    text-decoration: none;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    background-color: #f96d00;
+}
+
+
+header {
+
+    background-color: #222831;
+    padding: 5px 20px 20px 20px;
+    width: auto;
+    margin: 0;
+}
+
+/*content*/
+
+.main_information {
+    margin: 20px;
+    padding-top: 30px;
+}
+
+
+.img-div {
+    float: left;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto 20px 20px 0;
+
+}
+
+#image {
+    height: 500px;
+    border-radius: 10px;
+
+}
+
+.tribute-inf{
+    padding-top: 10px;
+}
+
+.gallery_title {
+
+    clear: both;
+    background-color: #222831;
+    padding: 20px 40px 40px 40px;
+    width: auto;
+    margin: 0;
+
+}
+
+.gallery_title h2 {
+    color: #f2f2f2;
+    
+}
+
+.photos_gallery {
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 40px;
+    justify-content: center;
+    
+
+}
+
+.photos_gallery img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Photos_gallery::after {
+    content: "";
+    width: 350px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 40px 40px 40px;
+    width: auto;
+    margin: 0;
+    text-align: center;
+}
+
+.read_more {
+    font-size: 1.2rem;
+}
+
+.read_more a {
+    color: #ad7c5c
+}
+
+footer .copywrite_information p {margin-bottom: -10px;}
